@@ -12,7 +12,7 @@ We'll want to create the same variables laid out in the article, except instead 
 
 **secret**: your API Client Secret from Looker
 
-**Auth_Url**: the /login endpoint of your Looker instance (i.e. https://instance.looker.com:19999/api/3.1/login)
+**Auth_Url**: the /login endpoint of your Looker instance (i.e. https://instance.looker.com:19999/api/4.0/login)
 
 ### Step 3: Add pre-request script
 Edit your Looker collection and add [the script in this repo](https://github.com/deanlooker/looker_postman_api_token_renewal/blob/main/looker_postman_api_token_renewal_script.js) as a pre-request script. This will run before every request in that collection (the auth call will only run if the token is expired).
